@@ -10,12 +10,11 @@ The key idea is to **integrate the transport residual as a degradation-specific 
 ## Repository structure
 
 ## Setup and Pretrained Weights
-All the experiments are conducted on Pytorch 2.1.0 with cuda 11.8 an NVIDIA 4090 GPU. For super-resolution, there is an extra preprocessing step. The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
-# Installation
+The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
 
 ### Dependencies Installation
 
-This repository is built in PyTorch 1.8.1 and tested on Ubuntu 18.04 environment (Python3.8, CUDA11.6, cuDNN8.5).
+This repository is built in PyTorch 2.1.1 and tested on Ubuntu 18.04 environment (Python3.8, CUDA11.8)
 Follow these instructions
 
 #### 
