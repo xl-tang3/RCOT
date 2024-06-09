@@ -1,5 +1,5 @@
 # Residual-Conditioned Optimal Transport (RCOT)
-This is the official `Python` implementation of the [ICML 2024]([https://iclr.cc](https://icml.cc/)) paper **Residual-Conditioned Optimal Transport: Towards Structure-Preserving Unpaired and Paired Image Restoration** (https://arxiv.org/abs/2405.02843).
+This is the official `Python` implementation of the [ICML 2024]([https://icml.cc/]) paper **Residual-Conditioned Optimal Transport: Towards Structure-Preserving Unpaired and Paired Image Restoration** (https://arxiv.org/abs/2405.02843).
 
 The repository contains reproducible `PyTorch` source code for computing **residual-conditioned optimal transport** (RCOT)  map for structure-preserving and degradation-aware restoration.
 The key idea is to integrate the transport residual as a degradation-specific cue into the transport cost, and more crucially, into the transport map via a two-pass conditioning mechanism.
@@ -8,7 +8,7 @@ The key idea is to integrate the transport residual as a degradation-specific cu
 ## Repository structure
 
 ## Setup and Pretrained Weights
-All the experiments are conducted on Pytorch 2.1.0  with an NVIDIA 4090 GPU. For super-resolution, there is an extra preprocessing step. The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
+All the experiments are conducted on Pytorch 2.1.0 with cuda 11.8 an NVIDIA 4090 GPU. For super-resolution, there is an extra preprocessing step. The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
 
 ### Environment setup
 ```console
