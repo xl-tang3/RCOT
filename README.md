@@ -7,17 +7,13 @@ The repository contains reproducible `PyTorch` source code for computing **resid
 The key idea is to **integrate the transport residual as a degradation-specific cue into the transport cost, and more crucially, into the transport map via a two-pass conditioning mechanism**.
 <p align="center"><img src="pics/stochastic_OT_map.png" width="400" /></p>
 
-## Repository structure
 
 ## Setup and Pretrained Weights
-The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
-
+This repository is built in PyTorch 2.1.1 and tested on Ubuntu 18.04 environment (Python3.8, CUDA11.8). The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
+Follow these instructions.
 ### Dependencies Installation
 
-This repository is built in PyTorch 2.1.1 and tested on Ubuntu 18.04 environment (Python3.8, CUDA11.8)
-Follow these instructions
 
-#### 
 1. Clone our repository
 ```
 git clone https://github.com/xl-tang3/RCOT.git
@@ -32,10 +28,10 @@ conda env create -f env.yml
 
 or
 
-####
+
 ```console
-conda create -n rcot python=3.8
-conda activate rcot
+conda create -n RCOT python=3.8
+conda activate RCOT
 conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install scikit-image
 pip install einops
@@ -56,41 +52,22 @@ Deraining: [Train100L&Rain100L](https://drive.google.com/drive/folders/1-_Tw-LHJ
 
 Dehazing: [RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-v0) (OTS)
 
-The training data should be placed in ``` data/Train/{task_name}``` directory where ```task_name``` can be Denoise,Derain or Dehaze.
-After placing the training data the directory structure would be as follows:
-```
-└───Train
-    ├───Dehaze
-    │   ├───original
-    │   └───synthetic
-    ├───Denoise
-    └───Derain
-        ├───gt
-        └───rainy
-```
-
 The testing data should be placed in the ```test``` directory wherein each task has a seperate directory. The test directory after setup:
-
 ```
 ├───dehaze
 │   ├───input
 │   └───target
 ├───denoise
 │   ├───bsd68
-│   └───urban100
+│   └───Kodak24
 └───derain
     └───Rain100L
         ├───input
         └───target
 ```
 
-Pretrained weights to reproduce the results in our paper: (https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi)
+[Pretrained weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) to reproduce the results in our paper.
 
-```console
-pip install -r requirements.txt
-```
-
-Finally, make sure to install `torch` and `torchvision`. It is advisable to install these packages based on your system and `CUDA` version. Please refer to the [official website](https://pytorch.org) for detailed installation instructions.
 
 
 
