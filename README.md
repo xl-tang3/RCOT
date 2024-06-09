@@ -1,4 +1,4 @@
-# 🔥 Residual-Conditioned Optimal Transport (RCOT)
+# Residual-Conditioned Optimal Transport (RCOT)
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2405.02843)
 
 <hr />
