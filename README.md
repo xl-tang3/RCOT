@@ -15,10 +15,10 @@ The key idea is to **integrate the transport residual as a degradation-specific 
 
 
 
-## 🔥 Setup and Pretrained Weights
+##  Setup and Pretrained Weights
 This repository is built in PyTorch 2.1.1 and tested on Ubuntu 18.04 environment (Python3.8, CUDA11.8). The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
 Follow these instructions.
-### 🔥 Dependencies Installation
+###  Dependencies Installation
 
 
 1. Clone our repository
@@ -49,7 +49,7 @@ pip install lpips
 pip install matplotlib
 ```
 
-### 🔥 Dataset Download and Preperation
+###  Dataset Download and Preperation
 
 All the 5 datasets used in the paper can be downloaded from the following locations:
 
@@ -72,7 +72,7 @@ The testing data should be placed in the ```test``` directory wherein each task 
         ├───input
         └───target
 ```
-### 🔥 Pretrained Weights
+###  Pretrained Weights
 
 Here are [Pretrained weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) to reproduce the results in our paper.
 
