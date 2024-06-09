@@ -7,10 +7,22 @@ The key idea is to integrate the transport residual as a degradation-specific cu
 
 ## Repository structure
 
+## Setup and Pretrained Weights
+All the experiments are conducted on Pytorch 2.1.0  with an NVIDIA 4090 GPU. For super-resolution, there is an extra preprocessing step. The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
 
-## Setup
-
-To run the notebooks, it is recommended to create a virtual environment using either [`conda`](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) or [`venv`](https://docs.python.org/3/library/venv.html). Once the virtual environment is set up, install the required dependencies by running the following command:
+### Environment setup
+```console
+conda create -n rcot python=3.8
+conda activate rcot
+pip install scikit-image
+pip install einops
+pip install h5py
+pip install opencv-python
+pip install tqdm
+pip install lpips
+pip install matplotlib
+```
+Pretrained weights to reproduce the results in our paper: (https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi)
 
 ```console
 pip install -r requirements.txt
