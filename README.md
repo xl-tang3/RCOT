@@ -1,17 +1,19 @@
-# Residual-Conditioned Optimal Transport (RCOT)
+# 🔥 Residual-Conditioned Optimal Transport (RCOT)
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2405.02843)
 
 This is the official `Python` implementation of the [ICML 2024](https://icml.cc/) paper [**Residual-Conditioned Optimal Transport: Towards Structure-Preserving Unpaired and Paired Image Restoration**](https://arxiv.org/pdf/2405.02843).
 
 The repository contains reproducible `PyTorch` source code for computing **residual-conditioned optimal transport** (RCOT)  map for structure-preserving and degradation-aware restoration.
 The key idea is to **integrate the transport residual as a degradation-specific cue into the transport cost, and more crucially, into the transport map via a two-pass conditioning mechanism**.
-<p align="center"><img src="pics/stochastic_OT_map.png" width="400" /></p>
+<p align="center"><img src="pics/concept3.png" width="400" /></p>
+<p align="center"><img src="pics/OTModel.png" width="400" /></p>
 
 
-## Setup and Pretrained Weights
+
+## 🔥 Setup and Pretrained Weights
 This repository is built in PyTorch 2.1.1 and tested on Ubuntu 18.04 environment (Python3.8, CUDA11.8). The LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
 Follow these instructions.
-### Dependencies Installation
+### 🔥 Dependencies Installation
 
 
 1. Clone our repository
@@ -42,7 +44,7 @@ pip install lpips
 pip install matplotlib
 ```
 
-### Dataset Download and Preperation
+### 🔥 Dataset Download and Preperation
 
 All the 5 datasets used in the paper can be downloaded from the following locations:
 
@@ -65,9 +67,11 @@ The testing data should be placed in the ```test``` directory wherein each task 
         ├───input
         └───target
 ```
-### Pretrained Weights
+### 🔥 Pretrained Weights
 
 Here are [Pretrained weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) to reproduce the results in our paper.
+
+
 
 
 
