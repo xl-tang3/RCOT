@@ -60,7 +60,8 @@ Deraining: [Train100L&Rain100L](https://drive.google.com/drive/folders/1-_Tw-LHJ
 Dehazing: [RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-v0) (OTS)
 
 Super-Resolution: [DIV2K x4](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
- The test directory after setup:
+
+The test directory after setup:
 ```
 ├───dehaze
 │   ├───input
