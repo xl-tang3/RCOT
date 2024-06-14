@@ -1,7 +1,7 @@
 # Residual-Conditioned Optimal Transport (RCOT)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2405.02843)
 <p align="center"><img src="pics/rcot_poster.png" width="1200" /></p>
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2405.02843)
 
 <hr />
 
