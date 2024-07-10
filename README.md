@@ -80,6 +80,8 @@ The test directory after setup:
 
 Here are [Pretrained weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) to reproduce the results in our paper.
 
+### Training code
+The training code is to be released. Contact me at Sherlock315@163.com if there is any problem.
 
 ## Citation
 ```
@@ -93,7 +95,6 @@ url={https://openreview.net/forum?id=irBHPlknxP}
 }
 ```
 
-Training code is to be released. Thanks for attention
 
 
 
