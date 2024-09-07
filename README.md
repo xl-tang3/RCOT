@@ -17,7 +17,7 @@ The key idea is to **integrate the transport residual as a degradation-specific 
 
 
 
-##  Setup and Pretrained Weights
+##  Setup
 This repository is built in PyTorch 2.1.1 and tested on Ubuntu 18.04 environment (Python3.8, CUDA11.8). For super-resolution, the LR images undergo bicubic rescaling to match the dimensions of their respective high-resolution counterparts.
 Follow these instructions.
 ###  Dependencies Installation
