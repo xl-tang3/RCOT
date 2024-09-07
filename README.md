@@ -87,9 +87,13 @@ The testing data should be placed in the ```test``` directory wherein each task 
     │   ├───bsd68
     │   └───kodak24
     └───derain
-        └───Rain100L
-            ├───input
-            └───target
+    │   └───Rain100L
+    │        ├───input
+    │        └───target
+    └───SR
+    │   └───DIV2K
+    │        ├───LR
+    │        └───HR
 ```
 ### Training 
 We have uploaded  the training code  of the newest version, in which the previous backbone MPRNet is replaced by Restormer, yielding better performance than previous versions.
