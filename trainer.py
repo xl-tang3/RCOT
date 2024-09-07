@@ -9,7 +9,7 @@ import torch.backends.cudnn as cudnn
 import torch.nn as nn
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
-from Net  import *
+from Net_Restormer  import *
 from util.dataset_utils import TrainDataset
 from torchvision.utils import save_image
 from utils import unfreeze, freeze
