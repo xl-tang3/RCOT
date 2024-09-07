@@ -53,7 +53,7 @@ pip install matplotlib
 
 ###  Dataset Download and Preperation
 
-All the 5 datasets used in the paper can be downloaded from the following locations:
+All the datasets used in the paper can be downloaded from the following locations:
 
 Denoising: [BSD400](https://drive.google.com/file/d/1idKFDkAHJGAFDn1OyXZxsTbOSBx9GS8N/view?usp=sharing), [WED](https://drive.google.com/file/d/19_mCE_GXfmE5yYsm-HEzuZQqmwMjPpJr/view?usp=sharing), [Kodak24]([https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u](https://www.kaggle.com/datasets/drxinchengzhu/kodak24/data))
 
@@ -63,19 +63,40 @@ Dehazing: [RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-v
 
 Super-Resolution: [DIV2K x4](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
 
-The test directory after setup:
+The training data should be placed in ``` data/Train/{task_name}``` directory where ```task_name``` can be Denoise,Derain or Dehaze.
+After placing the training data the directory structure would be as follows:
+```
+└───Train
+    ├───Dehaze
+    │   ├───original
+    │   └───synthetic
+    ├───Denoise
+    └───Derain
+        ├───gt
+        └───rainy
+```
+
+The testing data should be placed in the ```test``` directory wherein each task has a separate directory. The test directory after setup:
+
 ```
 ├───dehaze
 │   ├───input
 │   └───target
 ├───denoise
 │   ├───bsd68
-│   └───Kodak24
+│   └───urban100
 └───derain
     └───Rain100L
         ├───input
         └───target
 ```
+### Training example
+#### Deraining
+
+```
+python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --sigma=1 --de_type derain --type Deraining --patch_size=128  --gpus=0
+```
+
 ###  Pretrained Weights
 
 Here are [Pretrained weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) to reproduce the results in our paper.
