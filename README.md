@@ -116,8 +116,7 @@ python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --
 We provided the [weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) of original version with MPRNet as the backbone.
 
 
-### Training code
-The training code is to be released. Contact me at Sherlock315@163.com if there is any problem.
+Contact me at Sherlock315@163.com if there is any problem.
 
 ## Citation
 ```
