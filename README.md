@@ -79,30 +79,42 @@ After placing the training data the directory structure would be as follows:
 The testing data should be placed in the ```test``` directory wherein each task has a separate directory. The test directory after setup:
 
 ```
-├───dehaze
-│   ├───input
-│   └───target
-├───denoise
-│   ├───bsd68
-│   └───urban100
-└───derain
-    └───Rain100L
-        ├───input
-        └───target
+└───Test
+    ├───dehaze
+    │   ├───input
+    │   └───target
+    ├───denoise
+    │   ├───bsd68
+    │   └───kodak24
+    └───derain
+        └───Rain100L
+            ├───input
+            └───target
 ```
 ### Training 
 We have uploaded  the training code  of the newest version, in which the previous backbone MPRNet is replaced by Restormer, yielding better performance than previous versions.
 
-Here we showcase the training of the 'deraining' model as an example. Modify 'de_type' and 'type' for other tasks.
 #### Deraining
 
 ```
 python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --sigma=1 --de_type derain --type Deraining --patch_size=128  --gpus=0
 ```
 
+#### Dehazing
+
+```
+python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --sigma=1 --de_type dehaze --type Dehazing --patch_size=128  --gpus=0
+```
+#### Denoising with sigma=50
+
+```
+python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --sigma=1 --de_type denoise_50 --type Dehazing --patch_size=128  --gpus=0
+```
+
 ###  Pretrained Weights
 
-Here are [Pretrained weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) to reproduce the results in our paper.
+We provided the [weights](https://drive.google.com/drive/folders/16-D1VHGLlkK3DShQVBsDN2WyumlK0jSi) of original version with MPRNet as the backbone.
+
 
 ### Training code
 The training code is to be released. Contact me at Sherlock315@163.com if there is any problem.
