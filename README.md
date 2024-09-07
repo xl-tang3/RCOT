@@ -91,7 +91,7 @@ The testing data should be placed in the ```test``` directory wherein each task 
         └───target
 ```
 ### Training 
-We have uploaded  training code and of the newest version, in which the previous backbone MPRNet is replaced by Restormer. Hence, the results may be higher than previous versions. 
+We have uploaded  training code and of the newest version, in which the previous backbone MPRNet is replaced by Restormer, yielding better performance than previous versions.
 
 Here we showcase the training of the 'deraining' model as an example. Modify 'de_type' and 'type' for other tasks.
 #### Deraining
