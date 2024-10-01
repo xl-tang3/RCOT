@@ -120,7 +120,9 @@ class TrainDataset(Dataset):
         self.sample_ids = []
         if "denoise_15" in self.de_type:
             self.sample_ids += self.s15_ids
+        if "denoise_25" in self.de_type:
             self.sample_ids += self.s25_ids
+        if "denoise_50" in self.de_type:
             self.sample_ids += self.s50_ids
         if "derain" in self.de_type:
             self.sample_ids += self.rs_ids
