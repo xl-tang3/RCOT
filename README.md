@@ -63,7 +63,7 @@ Dehazing: [RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-v
 
 Super-Resolution: [DIV2K x4](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
 
-The training data should be placed in ``` data/Train/{task_name}``` directory where ```task_name``` can be Denoise,Derain or Dehaze.
+The training data should be placed in ``` data/Train/{task_name}``` directory where ```task_name``` can be Denoise, Derain, Dehaze or any single degradation.
 After placing the training data the directory structure would be as follows:
 ```
 └───Train
@@ -74,6 +74,9 @@ After placing the training data the directory structure would be as follows:
     └───Derain
         ├───gt
         └───rainy
+    └───single
+    │   ├───degraded
+    │   └───target
 ```
 
 The testing data should be placed in the ```test``` directory wherein each task has a separate directory. The test directory after setup:
@@ -90,10 +93,6 @@ The testing data should be placed in the ```test``` directory wherein each task 
     │   └───Rain100L
     │        ├───input
     │        └───target
-    └───SR
-    │   └───DIV2K
-    │        ├───LR
-    │        └───HR
 ```
 ### Training 
 We have uploaded  the training code  of the newest version, in which the previous backbone MPRNet is replaced by Restormer, yielding better performance than previous versions.
