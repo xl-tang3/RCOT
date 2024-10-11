@@ -124,11 +124,13 @@ Contact me at Sherlock315@163.com if there is any problem.
 
 ## Citation
 ```
-article{tang2024residual,
-  title={Residual-Conditioned Optimal Transport: Towards Structure-preserving Unpaired and Paired Image Restoration},
-  author={Tang, Xiaole and Hu, Xin and Gu, Xiang and Sun, Jian},
-  journal={arXiv preprint arXiv:2405.02843},
-  year={2024}
+@inproceedings{
+tang2024residualconditioned,
+title={Residual-Conditioned Optimal Transport: Towards Structure-Preserving Unpaired and Paired Image Restoration},
+author={Xiaole Tang and Xin Hu and Xiang Gu and Jian Sun},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://openreview.net/forum?id=irBHPlknxP}
 }
 ```
 
