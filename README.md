@@ -113,6 +113,11 @@ python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --
 ```
 python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --sigma=1 --de_type denoise_50 --type Dehazing --patch_size=128  --gpus=0
 ```
+#### For any degradation, you just need to put the LQ and HQ images in folders single/degraded and single/target and run:
+
+```
+python trainer.py --batchSize=3 --nEpochs=51 --pairnum=10000000 --Sigma=10000 --sigma=1 --de_type single --type single --patch_size=128  --gpus=0
+```
 
 ###  Pretrained Weights
 
