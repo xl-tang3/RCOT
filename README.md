@@ -11,8 +11,6 @@ This is the official `Python` implementation of the [ICML 2024](https://icml.cc/
 The repository contains reproducible `PyTorch` source code for computing **residual-conditioned optimal transport** (RCOT)  map for structure-preserving and degradation-aware restoration.
 The key idea is to **integrate the transport residual as a degradation-specific cue into the transport cost, and more crucially, into the transport map via a two-pass conditioning mechanism**.
 <p align="center"><img src="pics/concept3.png" width="1200" /></p>
-<p align="center"><img src="pics/OTModel.png" width="1200" /></p>
-
 
 
 ##  Setup
